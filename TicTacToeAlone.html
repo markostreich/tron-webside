@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Author: Streich, Marko -->
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+    <link rel="icon" href="images/tictactoe.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css"
+          href="style/responsive_standard.css">
+    <link rel="stylesheet" type="text/css" href="style/tictactoe.css">
+    <link rel="stylesheet" type="text/css" href="style/gamestats.css">
+    <script src="js/tictactoeBase.js"></script>
+    <script src="js/tictactoeAlone.js"></script>
+</head>
+<body id="bodyID">
+
+<header>
+    <h1>GAMES</h1>
+</header>
+
+<div class="wrapper" id="tictactoewrapper">
+    <nav class="col-2">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tron.html">Tron</a></li>
+            <li><a href="tronAlone.html">Tron Alone</a></li>
+            <li><a href="TicTacToe.html">Tic Tac Toe</a></li>
+            <li class="active"><a href="TicTacToeAlone.html">Tic Tac Toe
+                Alone</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="col-8">
+        <div class="center">
+            <div class="ticRow">
+                    <button class="ticbutton tichover" id="b11"
+                            onclick="chooseHuman(11)">
+                    </button>
+                    <button class="ticbutton tichover" id="b12"
+                            onclick="chooseHuman(12)">
+                    </button>
+                    <button class="ticbutton tichover" id="b13"
+                            onclick="chooseHuman(13)">
+                    </button>
+            </div>
+            <div class="ticRow">
+                    <button class="ticbutton tichover" id="b21"
+                            onclick="chooseHuman(21)">
+                    </button>
+                    <button class="ticbutton tichover" id="b22"
+                            onclick="chooseHuman(22)">
+                    </button>
+                    <button class="ticbutton tichover" id="b23"
+                            onclick="chooseHuman(23)">
+                    </button>
+            </div>
+            <div class="ticRow">
+                    <button class="ticbutton tichover" id="b31"
+                            onclick="chooseHuman(31)">
+                    </button>
+                    <button class="ticbutton tichover" id="b32"
+                            onclick="chooseHuman(32)">
+                    </button>
+                    <button class="ticbutton tichover" id="b33"
+                            onclick="chooseHuman(33)">
+                    </button>
+            </div>
+            <p id="who">X ist an der Reihe.</p>
+            <div>
+                <button class="restarter" onclick="restart()">Neustart</button>
+            </div>
+        </div>
+    </main>
+    <aside class="col-2">
+        <table id="gameStats">
+            <tr id="rowPlayerOne">
+                <td class="statCell" id="namePlayerOne">X</td>
+                <td class="statCell" id="statPlayerOne">0</td>
+            </tr>
+            <tr id="rowPlayerTwo">
+                <td class="statCell" id="namePlayerTwo">O</td>
+                <td class="statCell" id="statPlayerTwo">0</td>
+            </tr>
+        </table>
+    </aside>
+
+</div>
+<footer class="col-12">
+    <p>
+        <small>Marko Streich</small>
+    </p>
+</footer>
+</body>
+</html>

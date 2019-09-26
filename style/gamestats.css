@@ -1,0 +1,270 @@
+/* Author: Streich, Marko */
+
+#gameStats{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    width: 100%;
+}
+
+#gameStats th{
+    text-align: center;
+}
+
+.statCell {
+    border: 3px solid rgba(0, 0, 0, 0.37);
+    border-radius: 25px;
+    text-align: center;
+    padding: 5px;
+    color: rgba(0, 0, 0, 0.24);
+}
+
+#namePlayerOne {
+    position: relative;
+    background-color: #8fb2f2;
+    -webkit-animation-name: slideInRowPlayerOne; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: slideInNamePlayerOne;
+    animation-duration: 1s;
+}
+
+@-webkit-keyframes turnAroundNamePlayerOne {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes turnAroundNamePlayerOne {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+@-webkit-keyframes slideInNamePlayerOne {
+    0% {
+        left: 400px; top: -100px;
+    }
+    100% {
+        left: 0px; top: 0px;
+    }
+}
+
+@keyframes slideInNamePlayerOne {
+    0% {
+        left: 400px; top: -100px;
+    }
+    100% {
+        left: 0px; top: 0px;
+    }
+}
+
+@-webkit-keyframes slideOutNamePlayerOne {
+    0% {
+        left: 0px; top: 0px;
+    }
+    100% {
+        left: 400px; top: -100px;
+    }
+}
+
+@keyframes slideOutNamePlayerOne {
+    0% {
+        left: 0px; top: 0px;
+    }
+    100% {
+        left: 400px; top: -100px;
+    }
+}
+#statPlayerOne {
+    position: relative;
+    background-color: #8fb2f2;
+    -webkit-animation-name: slideInStatPlayerOne; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: slideInStatPlayerOne;
+    animation-duration: 1s;
+}
+
+@-webkit-keyframes turnAroundStatPlayerOne {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes turnAroundStatPlayerOne {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+@-webkit-keyframes slideInStatPlayerOne {
+    0% {
+        left: 400px; top: -150px;
+    }
+    100% {
+        left: 0px; top: 0px;
+    }
+}
+
+@keyframes slideInStatPlayerOne {
+    0% {
+        left: 400px; top: -150px;
+    }
+    100% {
+        left: 0px; top: 0px;
+    }
+}
+
+@-webkit-keyframes slideOutStatPlayerOne {
+    0% {
+        left: 0px; top: 0px;
+    }
+    100% {
+        left: 400px; top: -150px;
+    }
+}
+
+@keyframes slideOutStatPlayerOne {
+    0% {
+        left: 0px; top: 0px;
+    }
+    100% {
+        left: 400px; top: -150px;
+    }
+}
+
+#namePlayerTwo {
+    position: relative;
+    background-color: #ff4252;
+    -webkit-animation-name: slideInNamePlayerTwo; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: slideInNamePlayerTwo;
+    animation-duration: 1s;
+}
+
+@-webkit-keyframes turnAroundNamePlayerTwo {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes turnAroundNamePlayerTwo {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+@-webkit-keyframes slideInNamePlayerTwo {
+    0% {
+        left: 400px; top: 100px;
+    }
+    100% {
+        left: 0px; top: 0px;
+    }
+}
+
+@keyframes slideInNamePlayerTwo {
+    0% {
+        left: 400px; top: 100px;
+    }
+    100% {
+        left: 0px; top: 0px;
+    }
+}
+
+@-webkit-keyframes slideOutNamePlayerTwo {
+    0% {
+        left: 0px; top: 0px;
+    }
+    100% {
+        left: 400px; top: 100px;
+    }
+}
+
+@keyframes slideOutNamePlayerTwo {
+    0% {
+        left: 0px; top: 0px;
+    }
+    100% {
+        left: 400px; top: 100px;
+    }
+}
+
+#statPlayerTwo {
+    position: relative;
+    background-color: #ff4252;
+    -webkit-animation-name: slideInStatPlayerTwo; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: slideInStatPlayerTwo;
+    animation-duration: 1s;
+}
+
+@-webkit-keyframes turnAroundStatPlayerTwo {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes turnAroundStatPlayerTwo {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+@-webkit-keyframes slideInStatPlayerTwo {
+    0% {
+        left: 400px; top: 150px;
+    }
+    100% {
+        left: 0px; top: 0px;
+    }
+}
+
+@keyframes slideInStatPlayerTwo {
+    0% {
+        left: 400px; top: 150px;
+    }
+    100% {
+        left: 0px; top: 0px;
+    }
+}
+
+@-webkit-keyframes slideOutStatPlayerTwo {
+    0% {
+        left: 0px; top: 0px;
+    }
+    100% {
+        left: 400px; top: 150px;
+    }
+}
+
+@keyframes slideOutStatPlayerTwo {
+    0% {
+        left: 0px; top: 0px;
+    }
+    100% {
+        left: 400px; top: 150px;
+    }
+}

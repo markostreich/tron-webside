@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- Author: Streich, Marko -->
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Tron</title>
+    <link rel="icon" href="images/tron.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css"
+          href="style/responsive_standard.css">
+    <link rel="stylesheet" type="text/css" href="style/tron.css">
+    <link rel="stylesheet" type="text/css" href="style/gamestats.css">
+    <script src="js/tronBase.js"></script>
+    <script src="js/tronAlone.js"></script>
+</head>
+<body onkeypress="getKey(event);">
+
+<header>
+    <h1>GAMES</h1>
+</header>
+
+<div class="wrapper" id="tronwrapper">
+    <nav class="col-2">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tron.html">Tron</a></li>
+            <li class="active"><a href="tronAlone.html">Tron Alone</a></li>
+            <li><a href="TicTacToe.html">Tic Tac Toe</a></li>
+            <li><a href="TicTacToeAlone.html">Tic Tac Toe Alone</a></li>
+        </ul>
+    </nav>
+
+    <main class="col-8">
+        <div class="center">
+            <p class="gameevents" id="debug"></p>
+            <canvas class="tronboard" id="tronPlayGround" width="600" height="600"></canvas>
+            <p class="gameevents" id="result">Zum Spielstart drücke 'b'.</p>
+            <p>
+            <form id="namesform">
+                Spielername <span class="blue">Blau</span>.<br>
+                <input type="text" id="playerOneName"><br>
+                <input type="submit" id="playerNameBtn" value="Ok.">
+            </form>
+            </p>
+            <span class="gameevents" id="responseOne"></span><span id="responseTwo"></span>
+        </div>
+    </main>
+    <aside class="col-2">
+        <table id="gameStats">
+            <tr id="rowPlayerOne">
+                <td class="statCell" id="namePlayerOne">Blau</td>
+                <td class="statCell" id="statPlayerOne">0</td>
+            </tr>
+            <tr id="rowPlayerTwo">
+                <td class="statCell" id="namePlayerTwo">Rot</td>
+                <td class="statCell" id="statPlayerTwo">0</td>
+            </tr>
+        </table>
+        <div class="center keyimage">
+            <h1>Tasten</h1>
+            <div class="blue">w: Oben, d: Rechts, s: Unten, a: Links</div>
+            <!--<img src="images/keysBlue.png">-->
+        </div>
+    </aside>
+
+</div>
+<footer class="col-12">
+    <p>
+        <small>Marko Streich</small>
+    </p>
+</footer>
+</body>
+</html>

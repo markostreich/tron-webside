@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- Author: Streich, Marko -->
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Games</title>
+    <link rel="icon" href="images/tron.ico" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css"
+          href="style/responsive_standard.css">
+    <link rel="stylesheet" type="text/css" href="style/tron.css">
+    <link rel="stylesheet" type="text/css" href="style/gamestats.css">
+    <script src="js/tronBase.js"></script>
+    <script src="js/tronRobots.js"></script>
+</head>
+<body id="bodyID">
+
+<header>
+    <h1>GAMES</h1>
+</header>
+
+<div class="wrapper">
+    <nav class="col-2">
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="tron.html">Tron</a></li>
+            <li><a href="tronAlone.html">Tron Alone</a></li>
+            <li><a href="TicTacToe.html">Tic Tac Toe</a></li>
+            <li><a href="TicTacToeAlone.html">Tic Tac Toe Alone</a></li>
+        </ul>
+    </nav>
+    <main class="col-8">
+        <div class="center">
+            <p class="gameevents" id="debug"></p>
+            <canvas class="tronboard" id="tronPlayGround" width="600"
+                    height="600"></canvas>
+            <p class="gameevents" id="result"></p>
+        </div>
+    </main>
+    <aside class="col-2">
+        <table id="gameStats">
+            <tr id="rowPlayerOne">
+                <td class="statCell" id="namePlayerOne">Blau</td>
+                <td class="statCell" id="statPlayerOne">0</td>
+            </tr>
+            <tr id="rowPlayerTwo">
+                <td class="statCell" id="namePlayerTwo">Rot</td>
+                <td class="statCell" id="statPlayerTwo">0</td>
+            </tr>
+        </table>
+    </aside>
+</div>
+<footer class="col-12">
+    <p>
+        <small>Marko Streich</small>
+    </p>
+</footer>
+</body>
+</html>
+
+<!-- &#9776; -->

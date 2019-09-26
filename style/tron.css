@@ -1,0 +1,38 @@
+/* Author: Streich, Marko */
+
+main canvas.tronboard {
+    border:2px solid rgba(172, 183, 218, 0.46);
+    cursor:crosshair;
+    background: rgb(15, 17, 94);
+    max-width: 100%;
+}
+
+main .gameevents {
+    font-family: arial, sans-serif;
+    font-size: 25px !important;
+    font-stretch: extra-expanded;
+}
+#tronwrapper:before {
+    visibility: visible;
+    content: "TRON";
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 100rem;
+    left: 40rem;
+    right: 0;
+    margin: auto;
+    font-weight: 900;
+    font-size: 10em;
+    color: rgba(200, 67, 82, 0.36);
+    width: 100%;
+    height: 3em;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg); /* Safari and Chrome */
+}
+
+#namesform {
+    font-family: arial, sans-serif;
+    font-size: 25px !important;
+    font-stretch: extra-expanded;
+}
